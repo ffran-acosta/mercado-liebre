@@ -1,0 +1,121 @@
+*{
+    --black: #000;
+    --white: #fff;
+    --amarillo:  #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris: #666;
+    --grisclaro: #ebebeb;
+    --verde: #39b54a;
+}
+#header{
+    background-color: var(--amarillo);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 100vw;
+}
+#logo{
+    display: flex;
+    height: 15vh;
+    flex-basis: 40vw;
+    margin-top: 0.5rem;
+}
+#logo picture img{
+    display: flex;
+    width: 40vw;
+    height: 15vh;
+}
+#search{
+    display: flex;
+    flex-basis: 40vw;
+    height: 2rem;
+    margin-top: 5vh;
+    margin-left: 2rem;
+}
+#search input{
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    border-radius: 5px;
+}
+#search label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    order: 1;
+    color: var(--gris);
+    position: relative;
+    right: 2rem;
+}
+#header h2{
+    display: flex;
+    flex-basis: 100vw;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 1rem;
+}
+#header h2 i{
+    margin-right: 0.1rem;
+}
+.nav-complete{
+    display: none;
+}
+.burger-icon{
+    display: flex;
+    flex-basis: 100vw;
+    justify-content: center;
+}
+.burger-icon i{
+    color: var(--white);
+    background-color: var(--celeste);
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 20%;
+    margin: 1rem;
+}
+#banner{
+    width: 100vw;
+}
+@media all and  (min-width: 768px){
+    .burger-icon{
+        display: none;
+    }
+    .nav-complete{
+        display: flex;
+        flex-basis: 100vw;
+    }
+    .ventas{
+        display: flex;
+        justify-content:start;
+        flex-basis: 45vw;
+        margin: 1rem;
+    }
+    .usuario{
+        display: flex;
+        justify-content:end;
+        flex-basis: 70vw;
+        margin: 1rem;
+    }
+    #header ul li{
+        margin: 0 1rem
+    }
+}
+@media all and  (min-width:1200px) {
+    #logo{
+        flex-basis: 25vw;
+    }
+    #logo picture img{
+        flex-basis: 25vw;
+    }
+    #search{
+        flex-basis: 25vw;
+    }
+    #header h2{
+        display: flex;
+        flex-basis: 25vw;
+        text-align: center;
+        margin-top: 5vh;
+    }
+}

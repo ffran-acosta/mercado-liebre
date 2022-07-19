@@ -1,0 +1,131 @@
+*{
+    --black: #000;
+    --white: #fff;
+    --amarillo:  #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris: #666;
+    --grisclaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+#ultimas-visitas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#ultimas-visitas h2{
+    flex-basis: 100vw;
+    text-align: center;
+    color: var(--gris);
+    padding: 1rem 1rem 0 1rem;
+}
+#productos-ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#productos-ofertas h2{
+    flex-basis: 100vw;
+    text-align: center;
+    color: var(--gris);
+    padding: 1rem 1rem 0 1rem;
+}
+
+.lista-productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 90vw;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
+    background-color: var(--white);
+    margin: 1rem;
+}
+.product picture{
+    width: 90%;
+}
+.product picture img{
+    width: 100%;
+    height: 100%;
+}
+.product article{
+    background-color: var(--white);
+    flex-basis: 100vw;
+    border-top: solid 2px var(--grisclaro);
+    padding: 1rem 0 1rem 1rem;
+}
+.detalle{
+    display: flex;
+    padding-bottom: 1rem;
+}
+.precio{
+    flex-basis: 30vw;
+    font-size: 18px;
+    margin-right: .5rem;
+}
+.descuento{
+    flex-basis: 100vw;
+    font-size: 16px;
+    color: var(--verde);
+}
+.product h3{
+    display: flex;
+    flex-basis: 100vw;
+    color: var(--gris);
+}
+.truck{
+    position: relative;
+    bottom: 6.5rem;
+    left: 5.8rem;
+    font-size: 1.5rem;
+    color: var(--verde);
+    background-color: var(--white);
+    border:  1px solid var(--verde);
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+.product:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);;
+    transition: .75s;
+    opacity: 1;
+}
+.product:hover h3{
+    opacity: 1;
+    transition: .75s;
+}
+.product:hover .truck{
+    transform: rotate(-90deg);
+    transition: .75s;
+}
+@media all and (min-width:768px){
+    .lista-productos{
+        flex-basis: 100%;
+        justify-content: space-around;
+    }
+    .product{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex-basis: 35vw;
+    }
+    #ultimas-visitas h2{
+        text-align: start;
+    }
+    #productos-ofertas h2{
+        text-align: start;
+    }
+}
+@media all and (min-width:1200px) {
+    .product{
+        flex-basis: 20vw;
+        box-shadow: none;
+    }
+    .product h3{
+        opacity: 0;
+    }
+}

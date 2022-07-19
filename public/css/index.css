@@ -1,0 +1,33 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(login.css);
+@import url(register.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;    
+    --black: #000;
+    --white: #fff;
+    --amarillo:  #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris: #666;
+    --grisclaro: #ebebeb;
+    --verde: #39b54a;
+}
+body{
+    background-color: var(--grisclaro);
+}
+h2{
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+li{
+    list-style-type: none;
+}
