@@ -13,26 +13,29 @@
     display: flex;
     flex-wrap: wrap;
     align-items: start;
-    width: 100vw;
+    width: 100%;
+}
+.top-header{  
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100vw;
 }
 #logo{
     display: flex;
-    height: 15vh;
-    flex-basis: 40vw;
-    margin-top: 0.5rem;
+    width: 45%;
+    margin: 0.7rem;
 }
 #logo picture img{
-    display: flex;
-    width: 40vw;
-    height: 15vh;
+    width: 100%;
+    height: 100%;
 }
 #search{
     display: flex;
-    flex-basis: 40vw;
+    width: 45%;
     height: 2rem;
-    margin-top: 5vh;
-    margin-left: 2rem;
+    margin: auto;
 }
+
 #search input{
     border: none;
     outline: none;
@@ -51,10 +54,10 @@
 }
 #header h2{
     display: flex;
-    flex-basis: 100vw;
+    flex-basis: 100%;
     justify-content: center;
     font-size: 1rem;
-    margin: 1rem;
+    margin: auto;
 }
 #header h2 i{
     margin-right: 0.1rem;
@@ -104,17 +107,17 @@
 }
 @media all and  (min-width:1200px) {
     #logo{
-        flex-basis: 25vw;
+        flex-basis: 30vw;
     }
     #logo picture img{
-        flex-basis: 25vw;
+        flex-basis: 30vw;
     }
     #search{
-        flex-basis: 25vw;
+        flex-basis: 30vw;
     }
     #header h2{
         display: flex;
-        flex-basis: 25vw;
+        flex-basis: 30vw;
         text-align: center;
         margin-top: 5vh;
     }
