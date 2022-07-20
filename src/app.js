@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000;
 const start = () => (console.log("Starting server..."));
 server.listen(port, start());
 const {join} = require("path");
-const statics = express.static(join(__dirname, "./public"));
+const statics = express.static(join(__dirname, "../public"));
 server.use(statics);
 
 server.get("/", (req, res) => res.sendFile(join(__dirname, "views/home.html")))

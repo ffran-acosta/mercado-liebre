@@ -4,7 +4,7 @@
   "description": "Practica Integradora Modulo 4",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node src/app.js"
   },
   "author": "Franco Acosta",
   "license": "ISC",

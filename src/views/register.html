@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Login</title>
+    <title>Registro</title>
 </head>
 <body>
     <header id="header">
@@ -39,16 +39,30 @@
         
         <section class="burger-icon">
             <i class="bars fa-solid fa-bars"></i>  
-        </section>
+        </section>     
     </header>
 
-    <main id="login">
-        <form action="/home" method="get">
-            <input class="user" type="text" name="usuairo" id="usuario" required placeholder="Nombre de usuario">
-            <input class="pass" type="password" placeholder="Contraseña" name="password" id="password" required>
-            <a href="/">¿Olvidaste tu contraseña?</a>
-            <button class="btn-login" type="submit">Ingresar</button>
-        </form>      
+    <main id="register">
+        <form class="form-reg" action="/" method="post">
+            <span>Datos usuario</span>
+            <input class="in-register" type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input class="in-register" type="text" name="apellido" id="apellido" placeholder="Apellido">
+            <input class="in-register" type="text" name="email" id="email" placeholder="email">
+            <input class="in-register" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+            <input class="in-register" type="password" name="contraseña" id="contraseña" placeholder="Repetir Contraseña">
+            <input class="in-register" type="date" name="nacimiento" id="nacimiento" placeholder="Fecha Naciemiento">
+            <input class="in-register" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+            <fieldset class="tipo-usuario">
+                <span>Perfil usuario</span>
+                <label for="v-comprador">Comprador</label>
+                <input class="in-register" type="radio" name="view" id="v-comprador" value="comprador">
+                <label for="v-vendedor">Vendedor</label>
+                <input class="in-register" type="radio" name="view" id="v-vendedor" value="vendedor">  
+            </fieldset>
+            <div id="btn-enviar">
+                <button type="submit"class="btn-enviar">Enviar</button>
+            </div>
+        </form>
     </main>
 
     <footer id="footer">
