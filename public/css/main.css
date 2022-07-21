@@ -108,6 +108,9 @@
         flex-basis: 100%;
         justify-content: space-evenly;
     }
+    .product{
+        flex-basis: 35vw;
+    }
 }
 @media all and (min-width:1200px) {
     #ultimas-visitas h2{
