@@ -48,22 +48,20 @@
     background-color: var(--white);
     margin: 1rem;
 }
-.product picture{
-    width: 90%;
-}
+
 .product picture img{
     width: 100%;
     height: 100%;
 }
 .product article{
     background-color: var(--white);
-    flex-basis: 100vw;
-    border-top: solid 2px var(--grisclaro);
-    padding: 1rem 0 1rem 1rem;
+    flex-basis: 100%;
+    border-top: solid 3px var(--grisclaro);
+    padding: 1rem 0 0 1rem;
 }
 .detalle{
     display: flex;
-    padding-bottom: 1rem;
+    padding-bottom: 0.8rem;
 }
 .precio{
     flex-basis: 30vw;
@@ -82,17 +80,21 @@
 }
 .truck{
     position: relative;
-    bottom: 6.5rem;
-    left: 5.8rem;
-    font-size: 1.5rem;
+    bottom: 5.5rem;
+    left: 35%;
+    font-size: 1rem;
     color: var(--verde);
     background-color: var(--white);
     border:  1px solid var(--verde);
     border-radius: 50%;
     padding: 0.4rem;
 }
+.product{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    flex-basis: 35vw;
+}
 .product:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);;
+    box-shadow: 0px 0px 30px rgb(100, 100, 100);;
     transition: .75s;
     opacity: 1;
 }
@@ -107,23 +109,18 @@
 @media all and (min-width:768px){
     .lista-productos{
         flex-basis: 100%;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
-    .product{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        flex-basis: 35vw;
-    }
+}
+@media all and (min-width:1200px) {
     #ultimas-visitas h2{
-        text-align: start;
+    text-align: start;
     }
     #productos-ofertas h2{
         text-align: start;
     }
-}
-@media all and (min-width:1200px) {
     .product{
         flex-basis: 20vw;
-        box-shadow: none;
     }
     .product h3{
         opacity: 0;
